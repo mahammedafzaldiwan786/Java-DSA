@@ -2,3 +2,26 @@
 | Data Structures & Algorithms |
 --------------------------------
 
+=: Java Basics :=
+-----------------
+=> Java File:-
+-> file extention : .java
+-> Main public Class Name and file name should match
+-> to run java file main public Class should have main() method
+-> Boilerplate Code:-
+
+    class ClassName {
+      public static void main(String[] args) {
+            // Code
+     }
+    }
+
+=> Output in java:-
+-> Output using print() function
+-> println() for next line after printing output 
+
+    System.out.println("Hello, World!");
+
+    Output:-
+    Hello, World!
+   
