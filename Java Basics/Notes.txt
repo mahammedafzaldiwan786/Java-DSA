@@ -77,5 +77,23 @@ Class - A Class is like an object constructor, or a "blueprint" for creating obj
 Objects - object is created from a class.
 Interface - An interface is a completely "abstract class" that is used to group related methods with empty bodies.
 
+=> Comments in java:-
+-> Single Line Comment: // for single line comments.
+    // single line comment
+-> Multiline Comment : /* */ for multiline comments.
+    /* multiline comment */
+->Doc Type Comment : A doc comment starts with /**  and ends with */
+    /**
+    * A brief description of the class.
+    *
+    * More detailed description can go here.
+    * The first sentence is used as a summary.
+    * <p>Use HTML tags for formatting, like paragraphs.</p>
+    *
+    * @author  Author Name
+    * @version 1.0
+    */
+
+
 
 
