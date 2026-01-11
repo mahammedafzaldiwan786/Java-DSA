@@ -35,3 +35,47 @@ int - stores integers (whole numbers), without decimals, such as 123 or -123
 float - stores floating point numbers, with decimals, such as 19.99 or -19.99
 char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 boolean - stores values with two states: true or false
+
+=> Data Types in java:-
+-> java is a typed language. We need to define variables type in declaration.
+-> there are two types of daya type in java : 
+ 1. Primitive Data Types :
+    - byte (1 byte)
+    - short (2 byte)
+    - char (2 byte)
+    - boolean (1 byte)
+    - int (4 byte)
+    - long (8 byte)
+    - float (4 byte)
+    - double (8 byte)
+Note: 1 byte = 8 bit
+    bit = 0 or 1
+
+byte - Stores whole numbers from -128 to 127 (without decimals).
+short - Stores whole numbers from -32,768 to 32,767 (without decimals).
+char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes.
+boolean - stores values with two states: true or false.
+int - stores integers (whole numbers) from -2,147,483,648 to 2,147,483,647 (without decimals)
+long - stores integers (whole numbers), from  -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (without decimals), Note that you should end the value with an "L".
+float - stores floating point numbers, with decimals, such as 19.99f or -19.99f , Sufficient for storing 6 to 7 decimal digits, Note that you should end the value with an "f".
+double - stores floating point numbers, with decimals, such as 19.99 or -19.99 , Sufficient for storing 15 to 16 decimal digits, Note that you should end the value with an "d".
+
+
+
+
+ 2. Non-Primitive Data Type :
+    - String
+    - Array
+    - Class
+    - Object
+    - Interface
+
+String - stores text, such as "Hello". String is a arrya of characters ,values are surrounded by double quotes.
+Array - Arrays are used to store multiple values of same data type in a single variable, instead of declaring separate variables for each value.
+        To declare an array, define the variable type with square brackets [ ].
+Class - A Class is like an object constructor, or a "blueprint" for creating objects.
+Objects - object is created from a class.
+Interface - An interface is a completely "abstract class" that is used to group related methods with empty bodies.
+
+
+
