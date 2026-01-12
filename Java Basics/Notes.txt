@@ -94,6 +94,34 @@ Interface - An interface is a completely "abstract class" that is used to group 
     * @version 1.0
     */
 
+=> Input in Java:-
+-> The Scanner class is used to get user input, and it is found in the java.util package.
+    Scanner sc = new Scanner(System.in);
+    Explanation : Scanner -> class
+                  sc -> object of Scanner class (in this case "sc" is used it can be anything )
+                  new -> key word used to create Objects.
+                  Scanner(System.in) -> Scanner class takes argument - System.in
+                  System.in -> - System class
+                               - "in" is a object of System class
 
+-> nextLine() method used to take one Line input.
+    String name = sc.nextLine();
+       Explanation : String -> String is a class used to store string(array of characters)
+                     name -> name is a object of String class (in this case "name" is used it can be anything)
+                     sc -> object of Scanner class (we have created above - in this case "sc" is used it can be anything )   
+                     nextLine() -> nextLine() is a method of Scanner class
+
+-> Scanner class has different methods for different data types :
+    next() ->  Reads a Single word from the user
+    nextLine()	-> Reads a String value from the user
+    nextByte()	-> Reads a byte value from the user
+    nextShort()	-> Reads a short value from the user
+    nextBoolean() -> Reads a boolean value from the user
+    nextInt() -> Reads a int value from the user
+    nextFloat() -> Reads a float value from the user
+    nextLong() -> Reads a long value from the user
+    nextDouble() -> Reads a double value from the user
+
+                                                
 
 
