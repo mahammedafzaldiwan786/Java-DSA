@@ -206,7 +206,14 @@ Interface - An interface is a completely "abstract class" that is used to group 
          * 2. In mixed-type expressions, all operands are promoted to the largest data type involved in the expression
          */
         System.out.println("Result of mixed type expression: " + result);
-        
-                     
 
+=> How Java Code run:-
+-> Java Development Kit(JDK) consist Java Run-Time Environment(JRE) + Development Tools.
+-> Java Run-Time Environment(JRE) consist Java Virtual Machine(JVM) + Libraries.
+-> Flow of running java code:
 
+    source code ---> compiler ---> byte code ---> Java Virtual Machine ---> native code
+    .java            compilation     .class             JVM                      
+                                                        (Ecxecution)
+
+-> Portable language, once compiler compile code it(.class) can run at any platform(Operating System).
