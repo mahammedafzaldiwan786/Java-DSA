@@ -265,7 +265,21 @@ Interface - An interface is a completely "abstract class" that is used to group 
         y--; // Post-Decrement y by 1
         System.out.println("Unary Minus(Post-Decrement): " + y);
 
-    2. Relational Operators
+    2. Relational Operators : == , != , > , < , >= ,<= 
+        - Relational operators are used to compare two values (or variables).
+        - The return value of a comparison is either true or false.
+        - example:
+        int a = 10;
+        int b = 20;
+
+        // Using relational operators
+        System.out.println("a < b: " + (a < b));   // true
+        System.out.println("a > b: " + (a > b));   // false
+        System.out.println("a <= b: " + (a <= b)); // true
+        System.out.println("a >= b: " + (a >= b)); // false
+        System.out.println("a == b: " + (a == b)); // false
+        System.out.println("a != b: " + (a != b)); // true
+        
     3. Logical Operators
     4. Bitwise Operators 
     5. Assignment Operators
