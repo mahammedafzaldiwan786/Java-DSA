@@ -279,8 +279,57 @@ Interface - An interface is a completely "abstract class" that is used to group 
         System.out.println("a >= b: " + (a >= b)); // false
         System.out.println("a == b: " + (a == b)); // false
         System.out.println("a != b: " + (a != b)); // true
-        
-    3. Logical Operators
+
+    3. Logical Operators: && (Logical AND), || (Logical OR), ! (Logical NOT)
+    - Logical operators are used to determine the logic between variables or values, by combining multiple conditions.
+    - As with Relational operators, you can also test for true or false values with logical operators.
+    logic table:-
+    - for Logical AND:
+    --------------------------------------
+    | condition 1 | condition 2 | Answer |    
+    --------------------------------------
+    |     true    |   true      |  true  | 
+    |     true    |   false     |  false | 
+    |     false   |   true      |  false | 
+    |     false   |   false     |  false |
+    --------------------------------------
+    - for Logical OR:
+    --------------------------------------
+    | condition 1 | condition 2 | Answer |    
+    --------------------------------------
+    |     true    |   true      |  true  | 
+    |     true    |   false     |  true  | 
+    |     false   |   true      |  true  | 
+    |     false   |   false     |  false |
+    --------------------------------------
+    - for Logical NOT:
+    -------------------------
+    |  condition | Answer  |    
+    -------------------------
+    |    true    |   false |
+    |    false   |   true  |
+    -------------------------
+    
+    - example:
+       int a = 10;
+        int b = 20;
+        System.out.println("Values: a = " + a + ", b = " + b);
+        // Using logical AND operator
+        if (a < 15 && b > 15) {
+            System.out.println("logical AND operator: a < 15 && b > 15");
+            System.out.println("Both conditions are true.");
+        }
+        // Using logical OR operator
+        if (a < 5 || b > 15) {
+            System.out.println("logical OR operator: a < 5 || b > 15");
+            System.out.println("At least one condition is true.");
+        }
+        // Using logical NOT operator
+        if (!(a > 15)) {
+            System.out.println("logical NOT operator: !(a > 15)");
+            System.out.println("Condition is false, so NOT operator makes it true.");
+        }
+
     4. Bitwise Operators 
     5. Assignment Operators
 
