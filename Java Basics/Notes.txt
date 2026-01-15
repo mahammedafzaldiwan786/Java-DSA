@@ -401,5 +401,33 @@ Interface - An interface is a completely "abstract class" that is used to group 
          * -----
          * 0010 (2 in binary, result of a >> 1)
          */
-    5. Assignment Operators
+    5. Assignment Operators : = (Assign), += (Add and assign), -= (Subtract and assign), *= (Multiply and assign), /= (Divide and assign)
+    - An assignment operator is one or two symbols that are used to assign a value to a variable.
+    - example:
+     int a = 10;
+        int b = 5;
+
+        System.out.println("Initial values: a = " + a + ", b = " + b);
+
+        // Addition Assignment
+        a += b; // Equivalent to a = a + b
+        System.out.println("After a += b: a = " + a); // a = 15
+
+        // Subtraction Assignment
+        a -= b; // Equivalent to a = a - b
+        System.out.println("After a -= b: a = " + a); // a = 10
+
+        // Multiplication Assignment
+        a *= b; // Equivalent to a = a * b
+        System.out.println("After a *= b: a = " + a); // a = 50
+
+        // Division Assignment
+        a /= b; // Equivalent to a = a / b
+        System.out.println("After a /= b: a = " + a); // a = 10
+
+        // Modulus Assignment
+        a %= b; // Equivalent to a = a % b
+        System.out.println("After a %= b: a = " + a); // a = 0
+
+        
 
