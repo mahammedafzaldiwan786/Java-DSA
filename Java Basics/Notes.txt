@@ -128,7 +128,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
 -> Widening Conversion or Implicit Conversion (automatic) - converting a smaller type to a larger type size
 
     byte -> short -> char -> int -> long -> float -> double
--> example: 
+-> example : 
     int a = 10;
         long b = a; // conversion successful
 
@@ -150,7 +150,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
 -> Narrowing Casting or explicit Conversion(manual) - converting a larger type to a smaller type size
 
     double -> float -> long -> int -> char -> short -> byte
--> example:
+-> example :
     float x = 9.78f; 
           int y =  x; // compilation error: incompatible types: possible lossy conversion from float to int
         /**
@@ -166,7 +166,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
 
 => Special Case Conversion:-
 -> when try to converting characters to numbers it converting into character's ASSCI value.
--> example:  
+-> example :  
     char character = 'A';
 
         // Implicit conversion from char to int
@@ -181,7 +181,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
 => Type Promotion in Expressions:-
 -> java automatically promotes each byte, short or char operand into int when evaluating an Expressions.
 -> if one operand is long, float or double the whole Expression is promoted to long, float or double respectively.  
--> example:
+-> example :
      byte b1 = 10;
         byte b2 = 20;
         // byte b3 = b1 + b2; // Compilation error: cannot convert from int to byte
@@ -201,7 +201,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
         // Mixed type expression
         double result = b1 + i1 + f1 + d1; // All operands promoted to double
         /**
-         * Explanation:
+         * Explanation :
          * 1. When performing arithmetic operations, Java promotes smaller data types to larger data types
          * 2. In mixed-type expressions, all operands are promoted to the largest data type involved in the expression
          */
@@ -221,10 +221,10 @@ Interface - An interface is a completely "abstract class" that is used to group 
 => Operators:-
 -> Symbols that tell compiler to perform some operations.
 -> types of operator in java :
-    1. Arithmetic Operators (Binary/Unary/ternaty): 
+    1. Arithmetic Operators (Binary/Unary/ternary): 
         - Binary : + , - , * , / , %
         - Unary : ++ , --
-        - example: 
+        - example : 
          /* Binary Operators */
         int a = 10;
         int b = 5;
@@ -265,10 +265,26 @@ Interface - An interface is a completely "abstract class" that is used to group 
         y--; // Post-Decrement y by 1
         System.out.println("Unary Minus(Post-Decrement): " + y);
 
+        /*ternary Operator */
+        int num1 = 10;
+        int num2 = 20;
+
+        // Ternary Operator
+        int max = (num1 > num2) ? num1 : num2;
+        System.out.println("Maximum: " + max);
+
+         /**
+         * Note:
+         * The ternary operator is a shorthand for an if-else statement.
+         * It takes three operands: a condition, a result for true, and a result for false.
+         * Syntax: condition ? expression1 : expression2;
+         * If the condition is true, expression1 is evaluated and returned; otherwise, expression2 is evaluated and returned.
+         */
+
     2. Relational Operators : == , != , > , < , >= ,<= 
         - Relational operators are used to compare two values (or variables).
         - The return value of a comparison is either true or false.
-        - example:
+        - example :
         int a = 10;
         int b = 20;
 
@@ -310,7 +326,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
     |    false   |   true  |
     -------------------------
     
-    - example:
+    - example :
        int a = 10;
         int b = 20;
         System.out.println("Values: a = " + a + ", b = " + b);
@@ -334,7 +350,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
     - A bitwise operator is a symbol or keyword that tells the computer what operation to perform, bit by bit, on values or variables.
     - Bitwise operators are used to perform operations on values or variables, one bit at a time.
     - All data in the computer is stored as sequences of 0s and 1s. This makes it possible to use bitwise operators to manipulate the data.
-    - example: 
+    - example : 
     int a = 5;  // In binary: 0101
         int b = 3;  // In binary: 0011
         System.out.println("Bitwise Operations between a = " + a + " and b = " + b);
@@ -403,7 +419,7 @@ Interface - An interface is a completely "abstract class" that is used to group 
          */
     5. Assignment Operators : = (Assign), += (Add and assign), -= (Subtract and assign), *= (Multiply and assign), /= (Divide and assign)
     - An assignment operator is one or two symbols that are used to assign a value to a variable.
-    - example:
+    - example :
      int a = 10;
         int b = 5;
 
@@ -429,5 +445,51 @@ Interface - An interface is a completely "abstract class" that is used to group 
         a %= b; // Equivalent to a = a % b
         System.out.println("After a %= b: a = " + a); // a = 0
 
-        
+=> Conditional Statements:-
+- Conditions statements let you control the flow of your program - deciding which code runs, and which code is skipped.
+- Every if statement needs a condition that results in true or false. 
+-> if : The if statement specifies a block of code to be executed if a condition is true.
+- example :
+        int number = 15;
 
+        // Simple If Statement
+        if (number==15) {
+            System.out.println("The number is exactly 15.");
+        }
+-> if-else :  The else statement lets you run a block of code when the condition in the if statement is false.
+- example :
+        // If-Else Statement
+        if (number % 2 == 0) {
+            System.out.println(number + " is an even number.");
+        } else {
+            System.out.println(number + " is an odd number.");
+        }    
+-> else-if (if-else Ladder) : Use the else if statement to specify a new condition if the first condition is false.
+- example :     
+        // If-Else Ladder
+        if (number < 0) {
+            System.out.println(number + " is a negative number.");
+        } else if (number == 0) {
+            System.out.println("The number is zero.");
+        } else {
+            System.out.println(number + " is a positive number.");
+        }      
+-> Nested If : You can also place an if statement inside another if. This is called a nested if statement.
+- A nested if lets you check for a condition only if another condition is already true.
+- example : 
+        // Nested If Statement
+        if (number > 0) {
+            if (number < 10) {
+                System.out.println(number + " is a positive single-digit number.");
+            } else {
+                System.out.println(number + " is a positive multi-digit number.");
+            }
+        } else {
+            if (number < 0) {
+                System.out.println(number + " is a negative number.");
+            } else {
+                System.out.println("The number is zero.");
+            }
+        }
+
+        
