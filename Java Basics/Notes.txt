@@ -544,4 +544,35 @@ Interface - An interface is a completely "abstract class" that is used to group 
          * This is useful for replacing multiple if-else statements when checking a single variable against multiple values.
          */
 
-
+=> Loops:-
+-> While Loop:- The while loop repeats a block of code as long as the specified condition is true.
+- Syntax:
+    while (condition) {
+     // code block to be executed
+    }
+- Do not forget to increase the variable used in the condition (i++), otherwise the loop will never end!    
+-> example :
+        int count = 1;
+        System.out.println("While Loop Example:");
+        // Using while loop to print numbers from 1 to 5
+        while (count <= 10) {
+            System.out.println("Count: " + count);
+            count++;
+        }    
+-> Do While Loop:- The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
+- Syntax:
+    do {
+      // code block to be executed
+    } while (condition);   
+- The semicolon ; after the while condition is required. 
+-  A do/while loop always runs at least once, even if the condition is false at the start. This is the key difference from a while loop, which would skip the code block completely in the same situation.
+- example :
+      int count = 1;
+        System.out.println("Do-While Loop Example:");
+        // Using do-while loop to print numbers from 1 to 10
+        do {
+            System.out.println("Count: " + count);
+            count++;
+        } while (count <= 10);
+        
+              
