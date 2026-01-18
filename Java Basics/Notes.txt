@@ -544,3 +544,4 @@ Interface - An interface is a completely "abstract class" that is used to group 
          * This is useful for replacing multiple if-else statements when checking a single variable against multiple values.
          */
 
+
