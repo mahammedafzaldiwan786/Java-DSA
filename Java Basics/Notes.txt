@@ -558,7 +558,8 @@ Interface - An interface is a completely "abstract class" that is used to group 
         while (count <= 10) {
             System.out.println("Count: " + count);
             count++;
-        }    
+        } 
+           
 -> Do While Loop:- The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true. Then it will repeat the loop as long as the condition is true.
 - Syntax:
     do {
@@ -574,5 +575,38 @@ Interface - An interface is a completely "abstract class" that is used to group 
             System.out.println("Count: " + count);
             count++;
         } while (count <= 10);
+
+-> For Loop:- Used when the number of iterations is known.
+-> Syntax :
+    for (initialization; condition; updation) {
+     // code block to be executed
+    } 
+- initialization: executed (one time) before the execution of the code block.
+- condition: defines the condition for executing the code block.
+- updation: executed (every time) after the code block has been executed.     
+- example :
+     // Example of a for loop that prints numbers from 1 to 5
+        System.out.println("For loop from 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
         
-              
+- Nested For Loop: It is also possible to place a loop inside another loop. This is called a nested loop.   
+- The "inner loop" will be executed one time for each iteration of the "outer loop".
+- example :
+    // nested for loop example
+        System.out.println("Nested for loop (multiplication table 1 to 3):");
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                System.out.print(i * j + "\t");
+            }
+            System.out.println();
+        }
+        /**
+         * Explanation:
+         * The outer loop runs with 'i' taking values from 1 to 3.
+         * For each value of 'i', the inner loop runs with 'j' taking values
+         * from 1 to 3, printing the product of 'i' and 'j'.
+         * This results in a multiplication table for numbers 1 to 3.
+         */
+                 
