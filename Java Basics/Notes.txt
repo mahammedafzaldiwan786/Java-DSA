@@ -644,3 +644,69 @@ Interface - An interface is a completely "abstract class" that is used to group 
          */
          
                                    
+=> Functions(or Methods):-
+-> A function is a block of code which only runs when it is called.
+-> You can pass data, known as parameters, into a function.
+-> function are used to perform certain actions.
+-> functions are also known as Methods.
+-> Syntax:
+    public class Main {
+        static void myFunction() {
+        // code to be executed
+     }
+    }
+-> Explanation:
+- myFunction() is the name of the method
+- static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+- void means that this method does not have a return value. You will learn more about return values later in this chapter     
+
+-> types of functions:
+(1) no argument, no return value:- function doesn't take argument nor returns value.
+- example :
+    /**
+     * type of function: no argument, no return value
+     * This function prints a greeting message to the console.
+     */
+    // type of function: no argument, no return value
+    static void greet() {
+        System.out.println("Hello, welcome to Java programming!");
+    }
+(2) with argument, with return value:- function takes argument and returns value.
+- example :
+    /**
+     * type of function: with argument, with return value
+     * This function takes two integers as arguments and returns their sum.
+     * @param a First integer
+     * @param b Second integer
+     * @return Sum of a and b
+     */
+
+    //type of function: with argument, with return value
+    static int add(int a, int b) {
+        return a + b;
+    }
+(3) with argument, no return value:-  function takes argument and returns value, but doesn't returns values.
+- example :    
+    //type of function: with argument, no return value
+    static void displaySum(int a, int b) {
+        int sum = a + b;
+        System.out.println("The sum is: " + sum);
+    }
+    /**
+     * type of function: no argument, with return value
+     * This function returns a greeting message.
+     * @return Greeting message as a String
+     */
+(4) no argument with return value:- function doesn't take argument, but returns value.
+- example :
+       //type of function: no argument, with return value
+    static String getGreetingMessage() {
+        return "Hello, welcome to Java programming!";
+    }
+    /**
+     * type of function: no argument with return value
+     * This function returns a greeting message.
+     * this function does not take any arguments but returns a String value.
+     */
+
+     
