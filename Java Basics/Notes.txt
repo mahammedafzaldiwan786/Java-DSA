@@ -709,3 +709,14 @@ Interface - An interface is a completely "abstract class" that is used to group 
      * this function does not take any arguments but returns a String value.
      */
 
+-> Other two types:- 
+(1) Inbuilt-function: These are predefined in Java libraries and can be used directly.
+- example :
+(i) System.out.println() to print output to the console.
+(ii) Math.sqrt() to calculate the square root of a number.
+(iii) String.toLowerCase() to convert a string to lowercase. 
+
+(2) User-Defined function: These are methods created by the programmer to perform specific tasks.
+-example :
+(i) Programmer create a function to calculate sum.
+(ii) Programmer create a function to calculate factorial.
