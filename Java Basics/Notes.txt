@@ -766,3 +766,53 @@ Interface - An interface is a completely "abstract class" that is used to group 
      * 
      */
 
+=> Scope :-
+-> Scope: variables are only accessible inside the region where they are created. This is called scope.
+-> Metod Scope: Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared.
+- example :
+    public static void main(String[] args) {
+        int outerVariable = 10; // This variable is in the scope of the main method
+
+        {
+            // This is a new block scope
+            int innerVariable = 20; // This variable is in the scope of this block
+            System.out.println("Inner Variable: " + innerVariable); // Accessible here
+            System.out.println("Outer Variable from inner block: " + outerVariable); // Accessible here
+        }
+
+        // System.out.println("Inner Variable: " + innerVariable); // This would cause a compile-time error
+
+        System.out.println("Outer Variable: " + outerVariable); // Accessible here
+    }
+-> Block Scope: A block of code refers to all of the code between curly braces { }. Variables declared inside a block of code are only accessible by the code between the curly braces, and only after the line in which the variable was declared.
+- A block of code can stand alone, or be part of an if, while, or for statement. In a for loop, the variable declared in the loop header (like int i = 0) only exists inside the loop.
+- example :
+    public static void main(String[] args) {
+        int x = 5; // Variable in the scope of the main method
+
+        {
+            // Start of a new block
+            int y = 10; // Variable in the scope of this block
+            System.out.println("Inside block:");
+            System.out.println("x: " + x); // Accessible here
+            System.out.println("y: " + y); // Accessible here
+        } // End of the block
+
+        System.out.println("Outside block:");
+        System.out.println("x: " + x); // Accessible here
+        // System.out.println("y: " + y); // This would cause a compile-time error
+    }
+-> Loop Scope: Variables declared inside a loop only exist inside the loop.
+- example : 
+     public static void main(String[] args) {
+        for (int i = 0; i < 3; i++) {
+            int loopVariable = i * 2; // Variable in the scope of the loop
+            System.out.println("Inside loop iteration " + i + ":");
+            System.out.println("i: " + i); // Accessible here
+            System.out.println("loopVariable: " + loopVariable); // Accessible here
+        }
+
+        // System.out.println("i: " + i); // This would cause a compile-time error
+        // System.out.println("loopVariable: " + loopVariable); // This would also cause a compile-time error
+    }
+
